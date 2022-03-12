@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D5F3FB"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hellotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello User!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/hellosubtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hope you are safe!"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="55dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/whitecard"
+        android:layout_marginTop="90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Trusted Contacts"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/trackMe"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/whitecard"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Track Me"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrowios"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="94dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/compass"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="55dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/safePlace"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/whitecard"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Safe Places"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrowios"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="118dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/nearmap"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="55dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/educate"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/whitecard"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Self Defence"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrowios"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="125dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/karate" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/whitecard"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="First aid"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrowios"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="83dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/firstaid" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/whitecard"
+        android:layout_marginLeft="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/emergencycall"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Emergency Contacts"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrowios"
+                android:layout_marginLeft="-5dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        tools:ignore="BottomAppBar">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/sos"
+        app:fabCustomSize="100dp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:maxImageSize="100dp"
+        app:tint="@null" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
