@@ -6,14 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#D5F3FB"
+    android:background="#E7F3FF"
     tools:context=".MainActivity">
+
+
 
     <TextView
         android:id="@+id/hellotxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello User!"
+        android:text="Hello Umesh!"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
@@ -25,18 +27,20 @@
         android:layout_height="wrap_content"
         android:text="Hope you are safe!"
         android:textSize="16dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="55dp" />
 
     <RelativeLayout
+        android:id="@+id/trustedlayout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="105dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/whitecard"
         android:layout_marginTop="90dp">
 
         <TextView
+            android:id="@+id/txt12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your Trusted Contacts"
@@ -44,13 +48,34 @@
             android:layout_marginLeft="10dp"
             android:textSize="16dp"/>
 
+        <ImageView
+            android:id="@+id/trustedpfp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/userprofile"
+            android:layout_below="@+id/txt12"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/homePh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trustedpfp"
+            android:text="+919082913251"
+            android:textSize="10dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:maxLength="10"/>
+
+
     </RelativeLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="205dp"
+        android:layout_marginTop="210dp"
         android:layout_marginRight="15dp"
         android:orientation="horizontal">
         <RelativeLayout
@@ -125,7 +150,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="345dp"
         android:layout_marginRight="15dp"
         android:orientation="horizontal">
         <RelativeLayout
@@ -163,6 +188,7 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/first"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginLeft="15dp"
@@ -197,6 +223,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/emergency"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="475dp"
@@ -248,6 +275,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="16dp"
+            app:itemTextColor="#0A27DC"
+            app:itemIconTint="#0A27DC"
             android:background="@android:color/transparent"
             app:menu="@menu/bottom_nav_menu" />
 

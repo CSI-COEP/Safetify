@@ -13,10 +13,11 @@
 
 
     <Button
+        android:id="@+id/stopBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/whitecard"
         android:text="Stop"

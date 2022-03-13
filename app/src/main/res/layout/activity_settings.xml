@@ -5,8 +5,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#abab"
+    android:background="#E7F3FF"
     tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitecard"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginRight="30dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/userprofile"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Umesh Lodha"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="+91 9082913251"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/TrustedContacts"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/whitecard"
+        android:layout_marginTop="220dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/trusted" />
+
+        <TextView
+            android:id="@+id/contTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="Trusted Contacts"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/whitecard"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="bottom"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/logouttxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Logout"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/logouttxt"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/ic_baseline_login_24" />
+
+
+    </RelativeLayout>
 
 
 
@@ -15,7 +110,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-
         app:fabCradleRoundedCornerRadius="10dp"
         app:fabCradleVerticalOffset="10dp">
 
@@ -23,22 +117,20 @@
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:itemTextColor="#0A27DC"
+            app:itemIconTint="#0A27DC"
             android:layout_marginEnd="16dp"
             android:background="@android:color/transparent"
             app:menu="@menu/bottom_nav_menu" />
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:fabCustomSize="100dp"
-        app:tint="@null"
-        android:scaleType="fitXY"
-        app:maxImageSize="100dp"
-        android:src="@drawable/sos"
-        app:layout_anchor="@id/bottomAppBar" />
 
+
+    <View
+    android:layout_width="2dp"
+    android:layout_height="52dp"
+    android:layout_gravity="center|bottom"
+    android:background="#838383"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -7,11 +7,15 @@ import androidx.appcompat.app.AppCompatDelegate;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class Settings extends AppCompatActivity {
@@ -24,10 +28,32 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
+        FirebaseAuth fAuth = FirebaseAuth.getInstance();
 
 
 
 
+
+        RelativeLayout logout = findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fAuth.signOut();
+                Intent intent = new Intent(Settings.this, EnterPhoneNo.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        RelativeLayout trustedCon = findViewById(R.id.TrustedContacts);
+        trustedCon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Settings.this, registration.class);
+                startActivity(intent);
+
+            }
+        });
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setBackground(null);
